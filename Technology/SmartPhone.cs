@@ -1,22 +1,23 @@
-﻿//using System;
-//namespace Technology
-//{
-//    public class SmartPhone : Computer
-//    {
-//        public string Carrier { get; set; }
-//        public List <App> Applications { get; set; }
+﻿using System;
+namespace Technology
+{
+    public class SmartPhone : Computer
+    {
+        public List<Application> = new List<Applications>();
+        public string Carrier { get; set; }
+        public List<Application> Applications { get; set; }
 
-//        public SmartPhone(double ram, double storage, string operatingSystem, int softwareDate, string dimensions, string carrier, List <App> application) : base(ram, storage, operatingSystem)
-//        {
-//            Carrier = carrier;
-//            Applications = application;
-//        }
+        public SmartPhone(int ram, int storage, string operatingSystem, int softwareDate, string dimensions, string carrier, List<string> application) : base(ram, storage, operatingSystem)
+        {
+            Carrier = carrier;
+            Applications = application;
+        }
 
-//        public List <App> DownloadApp (App application)
-//        {
-//            Applications.Add(application);
-//            return Applications;
-//        }
-//    }
-//}
+        //public List<Application> DownloadApp(Application app)
+        //{
+        //    Applications.Add(app);
+        //    return Applications;
+        //}
+    }
+}
 

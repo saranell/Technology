@@ -6,7 +6,7 @@ namespace Technology
         public int SoftwareDate { get; set; }
         public string Dimensions { get; set; }
 
-        public Laptop(double ram, double storage, string operatingSystem, int softwareDate, string dimensions) : base(ram, storage, operatingSystem)
+        public Laptop(int ram, int storage, string operatingSystem, int softwareDate, string dimensions) : base(ram, storage, operatingSystem)
         {
             SoftwareDate = softwareDate;
             Dimensions = dimensions;

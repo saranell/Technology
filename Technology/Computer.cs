@@ -1,28 +1,28 @@
 ﻿using System;
 namespace Technology
 {
-	public class Computer
+	public class Computer : AbstractEntity
 	{
 		public double Ram { get; set; }
 		public double Storage { get; set; }
 		public string OperatingSystem { get; set; }
 		
 
-		public Computer(double ram, double storage, string operatingSystem)
+		public Computer(int ram, int storage, string operatingSystem)
 		{
 			Ram = ram;
 			Storage = storage;
 			OperatingSystem = operatingSystem;
 		}
 
-		public double IncreaseRam(double extraRam)
+		public double IncreaseRam(int n)
         {
-			return Ram += extraRam;
+			return Ram += n;
         }
 
-		public double IncreaseStorage(double extraStorage)
+		public double IncreaseStorage(int x)
         {
-			return Storage += extraStorage;
+			return Storage += x;
         }
 	}
 

@@ -1,10 +1,11 @@
-﻿using Technology;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Technology;
 namespace TechnologyTests;
 
 [TestClass]
-public class UnitTest1
+public class ComputerTests
 {
-    [TestMethod] //Computer test 1 of 3
+    [TestMethod]
     public void TestIncreaseRam()
     {
         Computer testComputer = new Computer(2, 3, "Windows");
@@ -13,7 +14,7 @@ public class UnitTest1
         Assert.AreEqual(5, testComputer.Ram);
     }
 
-    [TestMethod] //Computer test 2 of 3
+    [TestMethod]
     public void TestIncreaseStorage()
     {
         Computer testComputer = new Computer(2, 3, "Windows");
@@ -22,7 +23,12 @@ public class UnitTest1
         Assert.AreEqual(13, testComputer.Storage);
     }
 
-
+    [TestMethod]
+    public void TestInheritsId()
+    {
+        Computer testComputer = new Computer(2, 3, "Windows");
+        Assert.AreEqual(1, testComputer.Id);
+    }
     [TestMethod] //Smartphone test 1 of 3
     public void TestDownloadApp()
     {
